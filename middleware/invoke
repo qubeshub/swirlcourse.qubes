@@ -1,0 +1,11 @@
+#!/bin/sh
+
+/usr/bin/invoke_app "$@" -t swirl \
+    -u R-3.5.0 \
+    -u rstudio-server-1.0.143 \
+    -u wrwroxy-0.1 \
+    -u swirl-2.4.5 \
+    -w headless \
+    -c "xview -fullscreen -onroot @tool/data/swirl_logo.png" \
+    -c "wrwroxy --stream-log --logfile /dev/null" \
+    -C "rserver --server-working-dir ${HOME} --server-user ${USER} --www-port 8001"
