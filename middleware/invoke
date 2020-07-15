@@ -6,6 +6,7 @@
     -u wrwroxy-0.1 \
     -u swirl-2.4.5 \
     -w headless \
-    -c "xview -fullscreen -onroot @tool/data/swirl_logo.png" \
+    -c "xview -fullscreen -onroot @tool/data/catsteachstats_logo.png" \
     -c "wrwroxy --stream-log --logfile /dev/null" \
+    -c "@tool/bin/install_swirl_course" \
     -C "rserver --server-working-dir ${HOME} --server-user ${USER} --www-port 8001"

@@ -1,0 +1,4 @@
+#!/usr/bin/env Rscript
+# vim: set syntax=r:
+
+swirl::install_course_directory("../src/Cats_Teach_Stats")
