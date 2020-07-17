@@ -1,4 +1,8 @@
 #!/usr/bin/env Rscript
 # vim: set syntax=r:
 
-swirl::install_course_directory("../src/Cats_Teach_Stats")
+args <- commandArgs(trailingOnly=TRUE)
+if (length(args) == 0) {
+  stop("Please specify tool directory (@tool) on launch.")
+}
+swirl::install_course_directory(paste0(args[1], "/src/Cats_Teach_Stats"))

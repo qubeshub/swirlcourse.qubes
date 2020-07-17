@@ -8,5 +8,5 @@
     -w headless \
     -c "xview -fullscreen -onroot @tool/data/catsteachstats_logo.png" \
     -c "wrwroxy --stream-log --logfile /dev/null" \
-    -c "@tool/bin/install_swirl_course" \
+    -c "@tool/bin/install_swirl_course @tool" \
     -C "rserver --server-working-dir ${HOME} --server-user ${USER} --www-port 8001"
