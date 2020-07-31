@@ -1,6 +1,6 @@
 #!/bin/sh
 
-/usr/bin/invoke_app "$@" -t swirl \
+/usr/bin/invoke_app "$@" -t ctsbintestswirl \
     -u R-3.5.0 \
     -u rstudio-server-1.0.143 \
     -u wrwroxy-0.1 \
