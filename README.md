@@ -1,3 +1,1 @@
-# Cats Teach Stats Swirl Course
-
-Swirl course on QUBES
+# Template Swirl course on QUBES

@@ -1,12 +1,12 @@
 #!/bin/sh
 
-/usr/bin/invoke_app "$@" -t ctsbintestswirl \
+/usr/bin/invoke_app "$@" -t swirlcourse \
     -u R-3.5.0 \
     -u rstudio-server-1.0.143 \
     -u wrwroxy-0.1 \
     -u swirl-2.4.5 \
     -w headless \
-    -c "xview -fullscreen -onroot @tool/data/catsteachstats_logo.png" \
+    -c "xview -fullscreen -onroot @tool/data/swirlcourse_logo.png" \
     -c "wrwroxy --stream-log --logfile /dev/null" \
     -c "Rscript @tool/bin/install_swirl_course @tool" \
     -C "rserver --server-working-dir ${HOME} --server-user ${USER} --www-port 8001"
